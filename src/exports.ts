@@ -5,7 +5,7 @@ import { isConsonant } from './utils.ts';
  * @param text The text to translate
  * @returns The translated text
  */
-export const toRovarsprak = (text: string): string => {
+const toRovarsprak = (text: string): string => {
   return text.split('').reduce((result, character) => {
     if (isConsonant(character)) return `${result}${character}o${character}`;
     return result + character;
@@ -17,7 +17,7 @@ export const toRovarsprak = (text: string): string => {
  * @param text The Rövarspråk text
  * @returns The original text
  */
-export const fromRovarsprak = (text: string): string => {
+const fromRovarsprak = (text: string): string => {
   const chars = text.split('');
   const result = [];
   for (let i = 0; i < chars.length; i++) {
@@ -29,3 +29,5 @@ export const fromRovarsprak = (text: string): string => {
   }
   return result.join('');
 };
+
+export { toRovarsprak, fromRovarsprak };
