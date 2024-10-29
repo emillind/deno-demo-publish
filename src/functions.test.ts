@@ -1,5 +1,5 @@
 import { assertEquals } from 'jsr:@std/assert';
-import { fromRovarsprak, toRovarsprak } from './exports.ts';
+import { fromRovarsprak, toRovarsprak } from './functions.ts';
 
 const TEXT = 'A test, of might!';
 const ROVARSPRAK_TEXT = 'A totesostot, ofof momigoghohtot!';
