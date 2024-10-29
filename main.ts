@@ -1,5 +1,5 @@
 import { emojify } from '@emoji';
-import { fromRovarsprak, toRovarsprak } from './exports.ts';
+import { fromRovarsprak, toRovarsprak } from './src/functions.ts';
 
 if (import.meta.main) {
   if (!Deno.args[0]) {
