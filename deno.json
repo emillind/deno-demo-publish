@@ -1,0 +1,11 @@
+{
+  "name": "@emillind/publishing-demo",
+  "version": "0.1.0",
+  "exports": "./src/exports.ts",
+  "tasks": {
+    "dev": "deno run --watch src/main.ts"
+  },
+  "imports": {
+    "@emoji": "npm:node-emoji"
+  }
+}
